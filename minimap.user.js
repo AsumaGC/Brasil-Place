@@ -3,9 +3,9 @@
 // @namespace    http://discord.io/Brasil-Place
 // @version      1.0.0
 // @description  Pixelplace Minimap
-// @author       Some Anon && Qh0stM4N
-// @match        https://pixelcanvas.io/*
-// @match        http://pixelcanvas.io/*
+// @author       Asuma
+// @match        https://pixelplace.fun/*
+// @match        http://pixelplace.fun/*
 // @homepage     Discord.io/Brasil-Place
 // @updateURL    https://raw.githubusercontent.com/AsumaGc/Brasil-Place/master/minimap.user.js
 // @downloadURL  https://raw.githubusercontent.com/AsumaGc/Brasil-Place/master/minimap.user.js

@@ -63,7 +63,7 @@ window.addEventListener('load', function () {
         '</div><div id="minimap-config" style="line-height:20px;">' +
         '<span id="hide-map" style="cursor:pointer;">Esconder' +
         '</span> | <span id="follow-mouse" style="cursor:pointer;">Seguir Mouse' +
-        '</span> | Yakınlaştır: <span id="zoom-plus" style="cursor:pointer;font-weight:bold;">+</span>  /  ' +
+        '</span> | Zoom: <span id="zoom-plus" style="cursor:pointer;font-weight:bold;">+</span>  /  ' +
         '<span id="zoom-minus" style="cursor:pointer;font-weight:bold;">-</span>' +
         '</div>' +
         '</div>';
@@ -128,13 +128,13 @@ window.addEventListener('load', function () {
     document.getElementById("follow-mouse").onclick = function () {
         toggle_follow = !toggle_follow;
         if (toggle_follow) {
-            this.innerHTML = "Fareyi Takip Et";
+            this.innerHTML = "Seguir tela";
             loadTemplates();
             x_window = x;
             y_window = y;
             drawCursor();
         } else {
-            this.innerHTML = "Ekranı Takip Et";
+            this.innerHTML = "Seguir mouse";
             getCenter();
         }
     };

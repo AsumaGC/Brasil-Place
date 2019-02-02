@@ -3,7 +3,7 @@
 // @namespace    http://discord.io/Brasil-Place
 // @version      1.0.0
 // @description  Pixelplace Minimap
-// @author       Asuma
+// @author       ༺鿆Aѕυмα鿆༻
 // @match        https://pixelplace.fun/*
 // @match        http://pixelplace.fun/*
 // @homepage     Discord.io/Brasil-Place

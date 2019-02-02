@@ -1,23 +1,23 @@
 // ==UserScript==
-// @name         PixelTr Minimap
-// @namespace    http://discord.io/pixeltr
-// @version      3.1.2
-// @description  Pixelcanvas Minimap     ☪ | PixelTurkey | ☪
+// @name         Brasil-Place Minimap
+// @namespace    http://discord.io/Brasil-Place
+// @version      1.0.0
+// @description  Pixelplace Minimap
 // @author       Some Anon && Qh0stM4N
 // @match        https://pixelcanvas.io/*
 // @match        http://pixelcanvas.io/*
-// @homepage     https://github.com/Priz001/Pixelcanvas-Minimap/
-// @updateURL    https://raw.githubusercontent.com/Priz001/Pixelcanvas-Minimap/master/minimap.user.js
-// @downloadURL  https://raw.githubusercontent.com/Priz001/Pixelcanvas-Minimap/master/minimap.user.js
+// @homepage     Discord.io/Brasil-Place
+// @updateURL    https://raw.githubusercontent.com/AsumaGc/Brasil-Place/master/minimap.user.js
+// @downloadURL  https://raw.githubusercontent.com/AsumaGc/Brasil-Place/master/minimap.user.js
 // @grant        none
 // ==/UserScript==
 
 //ref:https://stackoverflow.com/questions/4604663/download-single-files-from-github
 //github raw file url  template
 //https://raw.githubusercontent.com/user/repository/branch/filename
-//https://raw.githubusercontent.com/Priz001/Pixelcanvas-Minimap/master/README.md
+//https://raw.githubusercontent.com/AsumaGc/Brasil-Place/master/README.md
 
-window.baseTepmlateUrl = 'https://raw.githubusercontent.com/Priz001/Pixelcanvas-Minimap/master';
+window.baseTepmlateUrl = 'https://raw.githubusercontent.com/AsumaGc/Brasil-Place/master';
 
 window.addEventListener('load', function () {
     //Regular Expression to get coordinates out of URL
@@ -61,8 +61,8 @@ window.addEventListener('load', function () {
         '<canvas id="minimap-board" style="width: 100%; height: 100%;z-index:2;position:absolute;top:0;left:0;"></canvas>' +
         '<canvas id="minimap-cursor" style="width: 100%; height: 100%;z-index:3;position:absolute;top:0;left:0;"></canvas>' +
         '</div><div id="minimap-config" style="line-height:20px;">' +
-        '<span id="hide-map" style="cursor:pointer;">Haritayı Sakla' +
-        '</span> | <span id="follow-mouse" style="cursor:pointer;">Fareyi Takip Et' +
+        '<span id="hide-map" style="cursor:pointer;">Esconder' +
+        '</span> | <span id="follow-mouse" style="cursor:pointer;">Seguir Mouse' +
         '</span> | Yakınlaştır: <span id="zoom-plus" style="cursor:pointer;font-weight:bold;">+</span>  /  ' +
         '<span id="zoom-minus" style="cursor:pointer;font-weight:bold;">-</span>' +
         '</div>' +
@@ -96,7 +96,7 @@ window.addEventListener('load', function () {
         document.getElementById("minimap-box").style.display = "none";
         document.getElementById("minimap-config").style.display = "none";
         document.getElementById("minimap-text").style.display = "block";
-        document.getElementById("minimap-text").innerHTML = "Haritayı Göster";
+        document.getElementById("minimap-text").innerHTML = "Mostrar";
         document.getElementById("minimap-text").style.cursor = "pointer";
     };
     document.getElementById("minimap-text").onclick = function () {
@@ -175,7 +175,7 @@ function exportMd() {
     Object.keys(template_list).map(function (index, ele) {
         var eles = template_list[index];
         mdstr += '\n#### ' + index;
-        mdstr += '\n[![](https://raw.githubusercontent.com/Priz001/Pixelcanvas-Minimap/master/images/' + eles.name + ')]';
+        mdstr += '\n[![](https://raw.githubusercontent.com/AsumaGc/Brasil-Place/master/images/' + eles.name + ')]';
         mdstr += '(http://pixelcanvas.io/@' + Math.floor(eles.x + eles.width / 2) + ',' + Math.floor(eles.y + eles.height / 2) + ')'
         mdstr += '\n';
         ttlpx += eles.width * eles.height;
@@ -220,7 +220,7 @@ function toggleShow() {
         document.getElementById("minimap-box").style.display = "none";
         document.getElementById("minimap-config").style.display = "none";
         document.getElementById("minimap-text").style.display = "block";
-        document.getElementById("minimap-text").innerHTML = "Show Minimap";
+        document.getElementById("minimap-text").innerHTML = "Mostrar";
         document.getElementById("minimapbg").onclick = function () {
             toggleShow()
         };
@@ -290,7 +290,7 @@ function loadTemplates() {
         if (zooming_in == false && zooming_out == false) {
             document.getElementById("minimap-box").style.display = "none";
             document.getElementById("minimap-text").style.display = "block";
-            document.getElementById("minimap-text").innerHTML = "Burada Şablon Bulunamadı";
+            document.getElementById("minimap-text").innerHTML = "Não há templates aqui.";
         }
     } else {
         document.getElementById("minimap-box").style.display = "block";

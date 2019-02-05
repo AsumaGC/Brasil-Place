@@ -13,6 +13,13 @@
     "width": 120,
     "height": 110
   },
+  "MuralBR": {
+    "name": "MuralBR.png",
+    "x": -1023,
+    "y": 533,
+    "width": 715,
+    "height": 427
+  },
   "Brcap": {
     "name": "brcap2.png",
     "x": 324,

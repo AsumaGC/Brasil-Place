@@ -1,10 +1,10 @@
 {
-  "Bandeira": {
-    "name": "Cuzcuz.png",
-    "x": -147,
-    "y": 532,
-    "width": 721,
-    "height": 437
+  "Templates": {
+    "name": "protect2.png",
+    "x": -9308,
+    "y": 1490,
+    "width": 1781,
+    "height": 582
   },
   "SpaceNow": {
     "name": "Vallfroz.png",
@@ -12,26 +12,5 @@
     "y": -2401,
     "width": 120,
     "height": 110
-  },
-  "MuralBR": {
-    "name": "MuralBR.png",
-    "x": -1023,
-    "y": 533,
-    "width": 715,
-    "height": 427
-  },
-  "Discord": {
-    "name": "Discord.png",
-    "x": -147,
-    "y": 470,
-    "width": 526,
-    "height": 60
-  },
-  "Brcap": {
-    "name": "brcap2.png",
-    "x": 324,
-    "y": 969,
-    "width": 250,
-    "height": 175
   }
 }

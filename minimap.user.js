@@ -4,8 +4,8 @@
 // @version      1.0.0
 // @description  Pixelplace Minimap
 // @author       ༺鿆Aѕυмα鿆༻
-// @match        https://pixelplace.fun/*
-// @match        http://pixelplace.fun/*
+// @match        https://pixelplanet.fun/*
+// @match        http://pixelplanet.fun/*
 // @homepage     Discord.io/Brasil-Place
 // @updateURL    https://raw.githubusercontent.com/AsumaGc/Brasil-Place/master/minimap.user.js
 // @downloadURL  https://raw.githubusercontent.com/AsumaGc/Brasil-Place/master/minimap.user.js
